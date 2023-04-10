@@ -1,4 +1,5 @@
-import './globals.css'
+import Navigation from "@/components/Navigation";
+import './globals.css';
 
 export const metadata = {
   title: 'My First Next App',
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navigation/>
+        {children}
+      </body>
     </html>
   )
 }
