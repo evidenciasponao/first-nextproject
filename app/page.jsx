@@ -9,12 +9,8 @@ async function fecthUsers() {
 async function IndexPage() {
   const users = await fecthUsers();
   console.log(users)
-  return (
-    <div>
-      <h1>IndexPage</h1>
-      <Users users={users}/>
-    </div>
-  );
+  return <Users users={users}/>
+
 }
 
 export default IndexPage
